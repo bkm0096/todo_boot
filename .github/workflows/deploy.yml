@@ -60,8 +60,8 @@ jobs:
           aws_access_key: ${{secrets.AWS_ACCESS_KEY}} # This is referred from Github Secrets
           aws_secret_key: ${{secrets.AWS_SECRET_KEY}} # This is referred from Github Secrets
           use_existing_version_if_available: true
-          application_name: TodoBootApp # Application name we created in Elastic Beanstalk
-          environment_name: TodoBootApp-env # Environment name we created in Elastic Beanstalk
+          application_name: PeekPick # Application name we created in Elastic Beanstalk
+          environment_name: PeekPick-env # Environment name we created in Elastic Beanstalk
           version_label: ${{ github.SHA }}
-          region: ap-northeast-2 # VERY IMPORTANT: AWS Region where initially Application was created in AWS EBS. We created in us-east-1 which is N-Virginia
+          region: ap-northeast-3 # VERY IMPORTANT: AWS Region where initially Application was created in AWS EBS. We created in us-east-1 which is N-Virginia
           deployment_package: todo.jar # Download artifacts from previous job
